@@ -29,3 +29,5 @@ var RutterLoader = {
     }
   },
 };
+
+window.RutterLoader = RutterLoader;
