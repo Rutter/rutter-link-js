@@ -7,7 +7,7 @@
   "scripts": {
     "build": "parcel build src/index.ts",
     "dev": "parcel example/index.html --dist-dir exampledist",
-    "pub": "npm version patch --force && npm publish"
+    "pub": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
