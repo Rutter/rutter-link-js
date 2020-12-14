@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "example": "exampledist/index.html",
   "scripts": {
-    "build": "parcel build src/index.ts"
+    "build": "parcel build src/index.ts",
+    "dev": "parcel example/index.html --dist-dir exampledist"
   },
   "repository": {
     "type": "git",
