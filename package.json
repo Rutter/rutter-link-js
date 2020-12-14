@@ -1,12 +1,13 @@
 {
   "name": "@rutter/rutter-link-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "example": "exampledist/index.html",
   "scripts": {
     "build": "parcel build src/index.ts",
-    "dev": "parcel example/index.html --dist-dir exampledist"
+    "dev": "parcel example/index.html --dist-dir exampledist",
+    "pub": "npm version patch --force && npm publish"
   },
   "repository": {
     "type": "git",
