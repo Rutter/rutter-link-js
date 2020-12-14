@@ -1,0 +1,23 @@
+{
+  "name": "@rutter/rutter-link-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RutterHQ/rutter-link-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RutterHQ/rutter-link-js/issues"
+  },
+  "homepage": "https://github.com/RutterHQ/rutter-link-js#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.1"
+  }
+}
