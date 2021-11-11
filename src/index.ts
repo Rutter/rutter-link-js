@@ -1,5 +1,5 @@
 const exampleCallback = () => {
-  console.log("I JUST FINISHED LOADING");
+  console.log("FINISHED LOADING");
 };
 
 const rutterScriptTag = document.createElement("script");
@@ -13,15 +13,15 @@ if (scripts.length > 0) {
   document.body.appendChild(rutterScriptTag);
 }
 
-var RutterLoader = {
+const RutterLoader = {
   loadScript: function (callback: any = exampleCallback) {
-    var scriptTag = document.createElement("script");
+    const scriptTag = document.createElement("script");
     scriptTag.async = true;
     scriptTag.type = "text/javascript";
     scriptTag.src = "https://unpkg.com/@rutter/rutter-link@latest";
     scriptTag.onload = callback;
 
-    var scripts = document.getElementsByTagName("script");
+    const scripts = document.getElementsByTagName("script");
     if (scripts.length > 0) {
       scripts[0].parentNode.insertBefore(scriptTag, scripts[0]);
     } else {
@@ -30,4 +30,4 @@ var RutterLoader = {
   },
 };
 
-window.RutterLoader = RutterLoader;
+(window as any).RutterLoader = RutterLoader;
