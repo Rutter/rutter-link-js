@@ -2,16 +2,18 @@ const exampleCallback = () => {
   console.log("FINISHED LOADING");
 };
 
-var rutterScriptTag = document.createElement("script");
-rutterScriptTag.async = true;
-rutterScriptTag.type = "text/javascript";
-rutterScriptTag.src = "https://unpkg.com/@rutter/rutter-link@latest";
-var scripts = document.getElementsByTagName("script");
-if (scripts.length > 0) {
-  scripts[0].parentNode.insertBefore(rutterScriptTag, scripts[0]);
-} else {
-  document.body.appendChild(rutterScriptTag);
-}
+(function () {
+  var rutterScriptTag = document.createElement("script");
+  rutterScriptTag.async = true;
+  rutterScriptTag.type = "text/javascript";
+  rutterScriptTag.src = "https://unpkg.com/@rutter/rutter-link@latest";
+  var scripts = document.getElementsByTagName("script");
+  if (scripts.length > 0) {
+    scripts[0].parentNode.insertBefore(rutterScriptTag, scripts[0]);
+  } else {
+    document.body.appendChild(rutterScriptTag);
+  }
+})();
 
 const RutterLoader = {
   loadScript: function (callback: any = exampleCallback) {

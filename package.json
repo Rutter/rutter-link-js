@@ -6,7 +6,7 @@
   "example": "exampledist/index.html",
   "scripts": {
     "prepublish": "yarn build",
-    "build": "parcel build src/index.ts",
+    "build": "parcel build  src/index.ts",
     "dev": "echo 'THIS DOES NOT ACTUALLY COMPILE THE JS index.ts, run yarn build' && parcel example/index.html --dist-dir exampledist"
   },
   "repository": {
