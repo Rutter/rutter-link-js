@@ -6,7 +6,7 @@ const exampleCallback = () => {
   var rutterScriptTag = document.createElement("script");
   rutterScriptTag.async = true;
   rutterScriptTag.type = "text/javascript";
-  rutterScriptTag.src = "https://unpkg.com/@rutter/rutter-link@latest";
+  rutterScriptTag.src = "https://cdn.jsdelivr.net/npm/@rutter/rutter-link@latest"
   var scripts = document.getElementsByTagName("script");
   if (scripts.length > 0) {
     scripts[0].parentNode.insertBefore(rutterScriptTag, scripts[0]);
